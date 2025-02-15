@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin-Flip-Game</title>
+</head>
+<body>
+    <h1>Coin-Flip-Game</h1>
+    <h2>Guess one</h2>
+    <button onclick="
+    let number = Math.random();
+    let outcome = '';
+    if(number>=0 && number <0.5){
+       outcome = 'head';
+    }else if(number>=0.5 && number<1){
+        outcome = 'Tail';
+    }
+    let result = '';
+    if(outcome === 'head'){
+        result = 'Win';
+    }else if(outcome === 'Tail'){
+        result = 'lose';
+    }
+    alert(`Your guess is Head, which means you ${result}. Outcome is ${outcome}.`);
+    ">Head</button>
+    <button onclick="
+      number = Math.random();
+     outcome = '';
+    if(number>=0 && number <0.5){
+       outcome = 'head';
+    }else if(number>=0.5 && number<1){
+        outcome = 'Tail';
+    }
+     result = '';
+    if(outcome === 'Tail'){
+        result = 'Win';
+    }else if(outcome === 'head'){
+        result = 'lose';
+    }
+    alert(`Your guess is Tail, which means you ${result}. Outcome is ${outcome}.`)";
+    >Tail</button>
+    <script>
+       
+    </script>
+</body>
+</html>
