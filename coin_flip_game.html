@@ -17,11 +17,7 @@
         outcome = 'Tail';
     }
     let result = '';
-    if(outcome === 'head'){
-        result = 'Win';
-    }else if(outcome === 'Tail'){
-        result = 'lose';
-    }
+    result = outcome === 'head' ? 'Win' : 'lose';
     alert(`Your guess is Head, which means you ${result}. Outcome is ${outcome}.`);
     ">Head</button>
     <button onclick="
@@ -33,12 +29,8 @@
         outcome = 'Tail';
     }
      result = '';
-    if(outcome === 'Tail'){
-        result = 'Win';
-    }else if(outcome === 'head'){
-        result = 'lose';
-    }
-    alert(`Your guess is Tail, which means you ${result}. Outcome is ${outcome}.`)";
+    result = outcome === 'Tail' ? 'Win' : 'lose';
+       alert(`Your guess is Tail, which means you ${result}. Outcome is ${outcome}.`)";
     >Tail</button>
     <script>
        
